@@ -1,0 +1,21 @@
+<h1></h1>
+<canvas id="myCanvas" style="width:1100px; height:800px;"></canvas>
+
+
+<script src="https://unpkg.com/hydra-synth"></script>
+<script>
+  new window.Hydra({
+    canvas: document.getElementById("myCanvas"),
+    detectAudio: false
+  })
+  osc(10, 0.1, 0.8).rotate(0, 0.1).kaleid().color(-1, 1).out()
+  noise(4.355, 0.001)
+    .color(12.811, 9.637, 26.617)
+    .colorama(0.747)
+    .modulateHue(src(o0)
+      .scale(1.233), 0.003)
+
+    .modulateRepeat(noise(7), 0.5, 0.5, 0.15, 0.15)
+
+    .out();
+</script>
